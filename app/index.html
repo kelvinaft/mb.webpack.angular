@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webpack & Angular</title>
+</head>
+<body data-ng-controller="appController">
+  <demoNav></demoNav>
+<p>Angular is working: {{1 + 1 === 2}}</p>
+<p>
+  {{demo}}
+</p>
+<ul>
+  <li><a href="#/home">home</a></li>
+  <li><a href="#/demo">demo</a></li>
+  <li><a href="#/404">404</a></li>
+</ul>
+<div class="" ng-view>
+</div>
+<script src="bundle.js"></script>
+</body>
+</html>

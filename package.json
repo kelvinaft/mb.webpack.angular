@@ -1,0 +1,33 @@
+{
+  "name": "mb.webpack",
+  "version": "1.0.0",
+  "description": "mb.webpack demo",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base app --hot"
+  },
+  "author": "kflores",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "jshint": "^2.8.0",
+    "jshint-loader": "^0.8.3",
+    "json-loader": "^0.5.4",
+    "ng-annotate-loader": "0.0.10",
+    "node-sass": "^3.4.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-resource": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "jquery": "^2.1.4"
+  }
+}
