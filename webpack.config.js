@@ -24,6 +24,10 @@ module.exports = {
         loader: 'style!css!sass'
       },
       {
+        test: /\.css$/,
+        loader: "style!css"
+      },
+      {
         test: /\.js$/,
         loader: 'ng-annotate!babel!jshint',
         exclude: /node_modules|bower_components/

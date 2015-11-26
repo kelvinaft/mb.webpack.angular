@@ -1,7 +1,7 @@
 var DATA = require('./data/config'); //Arrumara para que seja global
 console.log(DATA.URL);
 define(['./route.resolver'], function() {
-  var app = angular.module('app', ['ngRoute','ngResource','routeResolverServices']);
+  var app = angular.module('app', ['ngMaterial','ngRoute','ngResource','routeResolverServices']);
   app.config(['$routeProvider','routeResolverProvider','$controllerProvider','$compileProvider','$filterProvider','$httpProvider','$provide',
 	function ($routeProvider,routeResolverProvider,$controllerProvider,$compileProvider,$filterProvider,$provide) {
   		app.register =
@@ -33,6 +33,7 @@ define(['./route.resolver'], function() {
   app.controller('appController', ['$scope','$rootScope','$location','$http', function($scope,$rootScope,$location,$http) {
 	  var ng = $scope;
     ng.demo = 'HOLA SOY APP CONTROLLER';
+    var vm = this;
 	}]);
 	return app;
 });
